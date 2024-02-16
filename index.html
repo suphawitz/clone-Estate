@@ -4,9 +4,203 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Real Estate </title>
+    <title> Fusion Estate </title>
+
+    <!-- Get Jquery -->
+    <script src="src/jquery.min.js"></script>
+
+    <!-- Get Fontawsome -->
+    <link rel="stylesheet" href="fontawsome/css/all.min.css">
+    <script src="fontawsome/js/all.min.js"></script>
+
+    <!-- Get Tailwind Css -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Get SlickJS -->
+    <link rel="stylesheet" href="src/slick-slider/slick-theme.css">
+    <link rel="stylesheet" href="src/slick-slider/slick.css">
+    <script src="src/slick-slider/slick.min.js"></script>
+
+
+    <!-- Style src -->
+    <link rel="stylesheet" href="src/style.css">
+
 </head>
 <body>
-    
+
+    <!-- Clone by https://preview.themeforest.net/item/abolire-single-property-wordpress-theme/full_screen_preview/24804381?clickid=Uz40cU0nbxyNUzcTfcXuC3XQUkH1xBQna1v7Ug0&iradid=275988&iradtype=ONLINE_TRACKING_LINK&irgwc=1&irmptype=mediapartner&irpid=369282&mp_value1=&utm_campaign=af_impact_radius_369282&utm_medium=affiliate&utm_source=impact_radius -->
+
+
+    <!-- Header -->
+    <header class="header w-full relative overflow-hidden">
+        <nav class="bg-transparent py-10">
+            <div class="es-container">
+                <div class="flex justify-between gap-2">
+                    <div class="w-50">
+                        <h1 class="text-title text-3xl text-white">Fu<span style="color: var(--color-4)">s</span>ion</h1>
+                    </div>
+                    <ul class="flex items-center items-center gap-9">
+                        <li><a class="text-base es-text-hover" href="#home">Home</a></li>
+                        <li><a class="text-base es-text-hover" href="#home">Apartment</a></li>
+                        <li><a class="text-base es-text-hover" href="#home">Gallery</a></li>
+                        <li><a class="text-base es-text-hover" href="#home">Pages</a></li>
+                        <li><a class="text-base es-text-hover" href="#home">Blog</a></li>
+                        <li><a class="text-base es-text-hover" href="#home">Contact</a></li>
+                    </ul>
+                    <div class="flex items-center sm:gap-6">
+                        <a class="es-text-hover text-xl" href="#"><i class="fa-regular fa-calendar-check"></i></a>
+                        <a class="es-text-hover text-xl" href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                        <p class="es-text-hover text-xxl">(+66) 02 223 4456</p>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="w-full">
+            <div class="es-container flex justify-center">
+                <div class="w-4/6 m-48 flex flex-col">
+                    <h1 class="es-title text-5xl text-white">Let's Take You To Your Dream House</h1>
+                    <span class="text-sm text-slate-300 pt-6">2203 Mosita, Lorem ipsum dolor sit. VA 234405</span>
+                    <div class="block">
+                        <a class="es-btn mt-6" href="#">Take a Tour</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="w-auto absolute top-0 left-0 brightness-50" style="z-index: -100;">
+            <img src="images/image-02.jpg" alt="">
+        </div>
+    </header>
+    <!-- End Header -->
+
+    <!-- Information | Content 1 -->
+    <section class="property w-full py-10">
+        <div class="es-container flex justify-center">
+            <div class="w-5/6">
+                <div class="flex items-center">
+                    <div class="w-full">
+                        <img src="images/image-06.jpg" alt="">
+                    </div>
+                    <div class="w-full pl-10">
+                        <h1 class="text-4xl es-title">Property Information</h1>
+                        <p class="text-slate-400 text-sm py-16">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis alias tenetur quae facilis ipsam soluta aperiam, doloribus, vel aliquam recusandae quidem? Ut minus nulla explicabo, fugit corrupti animi error nisi?</p>
+                        <p class="es-text-hover font-light pb-4">Project Name : Fusion Est</p>
+                        <p class="es-text-hover font-light pb-4">Total Area : 720 Square Feets</p>
+                        <p class="es-text-hover font-light pb-4">Net Worth : $19,435,000</p>
+                        <p class="es-text-hover font-light pb-4">Category : Modern House</p>
+                        <p class="es-text-hover font-light pb-4">Launch Time : 9 December, 2025</p>
+                       
+                        <div class="block">
+                            <a class="es-btn mt-6" href="#">Get Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Information | Content 1 -->
+
+    <!-- Amenities | Content 2 -->
+    <section class="w-full py-10">
+        <div class="es-container">
+            <h1 class="text-4xl es-title text-center">Property Amenities</h1>
+            <div class="grid xs:grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 items-start gap-4 pt-10">
+                <div class="p-4 grid items-center justify-items-center">
+                    <i class="es-con2-icon w-full text-5xl text-white text-center fa-solid fa-city"></i>
+                    <h1 class="text-2xl es-title py-4">Multimedia Center</h1>
+                    <p class="text-sm text-center font-light text-slate-300">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint accusamus ipsa ex ullam?</p>
+                </div>
+
+                <div class="p-4 grid items-center justify-items-center">
+                    <i class="es-con2-icon w-full text-5xl text-white text-center fa-solid fa-landmark"></i>
+                    <h1 class="text-2xl es-title py-4">Car Parking</h1>
+                    <p class="text-sm text-center font-light text-slate-300">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+
+                <div class="p-4 grid items-center justify-items-center">
+                    <i class="es-con2-icon w-full text-5xl text-white text-center fa-solid fa-chart-line"></i>
+                    <h1 class="text-2xl es-title py-4">Guest Suites</h1>
+                    <p class="text-sm text-center font-light text-slate-300">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis dolores possimus eum?</p>
+                </div>
+
+                <div class="p-4 grid items-center justify-items-center">
+                    <i class="es-con2-icon w-full text-5xl text-white text-center fa-solid fa-house-laptop"></i>
+                    <h1 class="text-2xl es-title py-4">Private Territory</h1>
+                    <p class="text-sm text-center font-light text-slate-300">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+
+                <div class="p-4 grid items-center justify-items-center">
+                    <i class="es-con2-icon w-full text-5xl text-white text-center fa-solid fa-door-open"></i>
+                    <h1 class="text-2xl es-title py-4">Fast Internet</h1>
+                    <p class="text-sm text-center font-light text-slate-300">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus earum consequatur</p>
+                </div>
+
+                <div class="p-4 grid items-center justify-items-center">
+                    <i class="es-con2-icon w-full text-5xl text-white text-center fa-solid fa-people-roof"></i>
+                    <h1 class="text-2xl es-title py-4">Yoga Studio</h1>
+                    <p class="text-sm text-center font-light text-slate-300">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+
+                <div class="p-4 grid items-center justify-items-center">
+                    <i class="es-con2-icon w-full text-5xl text-white text-center fa-solid fa-igloo"></i>
+                    <h1 class="text-2xl es-title py-4">Pet House</h1>
+                    <p class="text-sm text-center font-light text-slate-300">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt, eligendi temporibus! Quia, sit?</p>
+                </div>
+
+                <div class="p-4 grid items-center justify-items-center">
+                    <i class="es-con2-icon w-full text-5xl text-white text-center fa-solid fa-house-flood-water"></i>
+                    <h1 class="text-2xl es-title py-4">Swimming Pool</h1>
+                    <p class="text-sm text-center font-light text-slate-300">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Amenities | Content 2 -->
+
+    <!-- Gallery | Content 3 -->
+    <section class="w-full py-10">
+        <div class="container mx-auto px-5">
+            <h1 class="text-4xl es-title ml-10">Property Gallery</h1>
+
+            <div class="es-gallery-slider es-slider mt-10">
+                <div class="relative w-full overflow-hidden">
+                    <img class="w-full h-80 object-cover" src="images/image-09.jpg" alt="">
+                    <a class="es-btn absolute top-5 left-5" href="#"><i class="fa-solid fa-plus"></i></a>
+                </div>
+                <div class="relative w-full overflow-hidden">
+                    <img class="w-full h-80 object-cover" src="images/image-10.jpg" alt="">
+                    <a class="es-btn absolute top-5 left-5" href="#"><i class="fa-solid fa-plus"></i></a>
+                </div>
+                <div class="relative w-full overflow-hidden">
+                    <img class="w-full h-80 object-cover" src="images/image-07.jpg" alt="">
+                    <a class="es-btn absolute top-5 left-5" href="#"><i class="fa-solid fa-plus"></i></a>
+                </div>
+                <div class="relative w-full overflow-hidden">
+                    <img class="w-full h-80 object-cover" src="images/image-08.jpg" alt="">
+                    <a class="es-btn absolute top-5 left-5" href="#"><i class="fa-solid fa-plus"></i></a>
+                </div>
+                <div class="relative w-full overflow-hidden">
+                    <img class="w-full h-80 object-cover" src="images/image-01.jpg" alt="">
+                    <a class="es-btn absolute top-5 left-5" href="#"><i class="fa-solid fa-plus"></i></a>
+                </div>
+                <div class="relative w-full overflow-hidden">
+                    <img class="w-full h-80 object-cover" src="images/image-02.jpg" alt="">
+                    <a class="es-btn absolute top-5 left-5" href="#"><i class="fa-solid fa-plus"></i></a>
+                </div>
+                <div class="relative w-full overflow-hidden">
+                    <img class="w-full h-80 object-cover" src="images/image-03.jpg" alt="">
+                    <a class="es-btn absolute top-5 left-5" href="#"><i class="fa-solid fa-plus"></i></a>
+                </div>
+                <div class="relative w-full overflow-hidden">
+                    <img class="w-full h-80 object-cover" src="images/image-05.jpg" alt="">
+                    <a class="es-btn absolute top-5 left-5" href="#"><i class="fa-solid fa-plus"></i></a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- End Gallery | Content 3 -->
+
+    <!-- Script src -->
+    <script src="src/script.js"></script>
 </body>
 </html>

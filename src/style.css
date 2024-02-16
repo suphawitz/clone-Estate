@@ -1,0 +1,138 @@
+/* Font Poppin and Roboto Slab */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto+Slab:wght@100..900&display=swap');
+
+/* ============== Root ============== */
+:root {
+
+    /* Theme color */
+    --color-1: #03001C;
+    --color-2: #301E67;
+    --color-3: #5b8fb9;
+    --color-4: #85dcc2;
+    --color-5: #47d0a7;
+}
+
+/* ============== Custom Class general use ============== */
+/* -------- Base Class -------- */
+
+* {
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--color-1);
+}
+
+.es-container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 3rem;
+}
+
+.header {
+    height: 100vh;
+    /* background: url(../images/image-01.jpg) center / cover no-repeat; */
+}
+
+
+/* -------- SlickJS Custom -------- */
+.slick-prev::before,
+.slick-next::before {
+    content: "" !important;
+}
+
+.slick-prev {
+    margin-left: -1.5rem;
+}
+
+.slick-next {
+    padding-left: 2rem;
+}
+
+.slick-arrow i,
+.slick-arrow svg {
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.slick-disabled {
+    opacity: .6;
+}
+
+.slick-dots li button::before {
+    content: none !important;
+
+}
+
+.slick-dots li {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: .5px solid #fff;
+    background-color: #fff;
+}
+
+.slick-dots .slick-active {
+    background-color: var(--color-5);
+}
+
+/* -------- Class btn, hover text and button -------- */
+.es-title {
+    font-family: "Roboto Slab", serif;
+    color: #fff;
+}
+
+.es-text-hover {
+    color: #fff;
+    transition: all .25s ease;
+}
+
+.es-text-hover:hover {
+    color: var(--color-4);
+}
+
+.es-btn {
+    display: inline-block;
+    padding: 1rem 1.5rem;
+    color: #fff;
+    background-color: var(--color-4);
+    transition: all .3s ease;
+}
+
+.es-btn:hover {
+    background-color: var(--color-5);
+}
+
+
+/* ============== Custom Class general use ============== */
+/* -------- Amenities | Content 2 -------- */
+.es-con2-icon {
+    color: var(--color-4) !important;
+    transition: all .25s ease;
+}
+
+.es-con2-icon:hover {
+    transform: scale(1.1);
+}
+
+/* -------- Gallery | Content 2 -------- */
+.es-gallery-slider div img {
+    transform: scale(1.1);
+    transition: all .3s ease;
+}
+
+.es-gallery-slider div img:hover {
+    transform: scale(1);
+}
+
+.es-gallery-slider div a {
+    transform: scale(0);
+    opacity: 0;
+    transition: all .3s ease;
+}
+
+.es-gallery-slider .relative:hover a {
+    transform: scale(1);
+    opacity: 1;
+}
