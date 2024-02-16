@@ -2,6 +2,14 @@
 // SlickJS 
 $(document).ready(function(){
 
+    // Slick Bg Header
+    $('.es-header-slider').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+      });
+
     // Slider Gallery
     $('.es-gallery-slider').slick({
         dots: true,
@@ -45,3 +53,24 @@ $(document).ready(function(){
 });
 
 
+// Scroll Animation on pages | Reveal Scroll
+
+    window.addEventListener('scroll', reveal);
+
+    function reveal() {
+        var reveals = document.querySelectorAll('.es-scroll-reveal');
+
+        for (var i = 0; i < reveals.length; i++) {
+            var windowHeight = window.innerHeight;
+            var revealTop = reveals[i].getBoundingClientRect().top;
+            var revealPoint = 150;
+
+            // add scroll active
+            if (revealTop < windowHeight - revealPoint) {
+                reveals[i].classList.add('es-scroll-active');
+            }
+            //  else {
+            //     reveals[i].classList.remove('es-scroll-active');
+            // }
+        }
+    }

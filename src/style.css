@@ -106,6 +106,18 @@ body {
 
 
 /* ============== Custom Class general use ============== */
+/* -------- Scroll Animation -------- */
+/* .es-scroll-reveal {
+    transform: translateY(150px);
+    opacity: 0;
+    transition: all 2s ease;
+}
+
+.es-scroll-active {
+    transform: translateY(0);
+    opacity: 1;
+} */
+
 /* -------- Amenities | Content 2 -------- */
 .es-con2-icon {
     color: var(--color-4) !important;
