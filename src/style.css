@@ -6,7 +6,7 @@
 
     /* Theme color */
     --color-1: #03001C;
-    --color-2: #301E67;
+    --color-2: #1b1235;
     --color-3: #5b8fb9;
     --color-4: #85dcc2;
     --color-5: #47d0a7;
@@ -147,4 +147,68 @@ body {
 .es-gallery-slider .relative:hover a {
     transform: scale(1);
     opacity: 1;
+}
+
+
+/* -------- Pleasant Nature | Content 6 -------- */
+.es-con5 {
+
+    position: relative;
+
+    /* The image used */
+    background-image: url("../images/image-12.jpg");
+
+    /* Set a specific height */
+    min-height: 500px;
+
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.es-con5::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(3, 7, 18, .6);
+}
+
+.es-con5-animate {
+    position: relative;
+    display: block;
+    width: 60px;
+    height: 60px;
+    background-color: var(--color-4);
+    border-radius: 50%;
+    color: #fff;
+    animation: pulse 2s infinite linear;
+}
+
+@keyframes pulse {
+    25% {
+        box-shadow: 0 0 0 18px var(--color-3);
+    }
+    50% {
+        box-shadow: 0 0 0 18px var(--color-5);
+    }
+}
+
+.es-con5-animate i,
+.es-con5-animate svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+/* -------- Footer -------- */
+.es-footer {
+    background-color: var(--color-2);
 }
