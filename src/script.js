@@ -54,23 +54,38 @@ $(document).ready(function(){
 
 
 // Scroll Animation on pages | Reveal Scroll
+window.addEventListener('scroll', reveal);
 
-    window.addEventListener('scroll', reveal);
+function reveal() {
+    var reveals = document.querySelectorAll('.es-scroll-reveal');
 
-    function reveal() {
-        var reveals = document.querySelectorAll('.es-scroll-reveal');
+    for (var i = 0; i < reveals.length; i++) {
+        var windowHeight = window.innerHeight;
+        var revealTop = reveals[i].getBoundingClientRect().top;
+        var revealPoint = 150;
 
-        for (var i = 0; i < reveals.length; i++) {
-            var windowHeight = window.innerHeight;
-            var revealTop = reveals[i].getBoundingClientRect().top;
-            var revealPoint = 150;
-
-            // add scroll active
-            if (revealTop < windowHeight - revealPoint) {
-                reveals[i].classList.add('es-scroll-active');
-            }
-            //  else {
-            //     reveals[i].classList.remove('es-scroll-active');
-            // }
+        // add scroll active
+        if (revealTop < windowHeight - revealPoint) {
+            reveals[i].classList.add('es-scroll-active');
         }
+        //  else {
+        //     reveals[i].classList.remove('es-scroll-active');
+        // }
     }
+}
+
+
+// ===============================
+// ------ Responsive Navbar ------
+// ===============================
+
+// Toggle to show and hide navbar menu
+let navbarMenu = document.getElementById("menu");
+let navbarMenuCon = document.getElementById("menu-contact");
+let burgerMenu = document.getElementById("burger");
+
+burgerMenu.addEventListener("click", () => {
+  navbarMenu.classList.toggle("es-nav-active");
+  navbarMenuCon.classList.toggle("es-nav-active");
+  burgerMenu.classList.toggle("es-nav-active");
+});

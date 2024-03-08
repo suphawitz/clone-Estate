@@ -18,6 +18,7 @@
 * {
     font-family: "Poppins", sans-serif;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -106,8 +107,80 @@ body {
 
 
 /* ============== Custom Class general use ============== */
+/* -------- Navbar responsive -------- */
+.es-nav-active {
+    opacity: 1 !important;
+    pointer-events: initial;
+    display: block !important;
+}
+
+.es-nav-block {
+    opacity: 0;
+    display: none;
+    pointer-events: auto;
+}
+
+.es-nav {
+    padding: 1.5rem 0;
+    background-color: var(--color-1);
+}
+
+.es-nav-contact {
+    padding: 1.5rem 0;
+    background-color: var(--color-2);
+}
+
+.burger {
+    position: relative;
+    display: block;
+    cursor: pointer;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    width: 1.5rem;
+    height: 1rem;
+    border: none;
+    outline: none;
+    visibility: visible;
+  }
+  .burger-line {
+    position: absolute;
+    display: block;
+    right: 0;
+    width: 100%;
+    height: 2.15px;
+    opacity: 1;
+    rotate: 0deg;
+    border-radius: 0.15rem;
+    background-color: var(--color-4);
+    transition: all 0.3s ease;
+  }
+  .burger-line:nth-child(1) {
+    top: 0px;
+  }
+  .burger-line:nth-child(2) {
+    top: 0.5rem;
+    width: 70%;
+  }
+  .burger-line:nth-child(3) {
+    top: 1rem;
+  }
+  .burger.is-active > .burger-line:nth-child(1) {
+    top: 0.5rem;
+    rotate: 135deg;
+  }
+  .burger.is-active > .burger-line:nth-child(2) {
+    opacity: 0;
+  }
+  .burger.is-active > .burger-line:nth-child(3) {
+    top: 0.5rem;
+    rotate: -135deg;
+  }
+
+
 /* -------- Scroll Animation -------- */
-/* .es-scroll-reveal {
+.es-scroll-reveal {
     transform: translateY(150px);
     opacity: 0;
     transition: all 2s ease;
@@ -116,7 +189,7 @@ body {
 .es-scroll-active {
     transform: translateY(0);
     opacity: 1;
-} */
+}
 
 /* -------- Amenities | Content 2 -------- */
 .es-con2-icon {
