@@ -33,43 +33,56 @@
     <!-- Clone by https://preview.themeforest.net/item/abolire-single-property-wordpress-theme/full_screen_preview/24804381?clickid=Uz40cU0nbxyNUzcTfcXuC3XQUkH1xBQna1v7Ug0&iradid=275988&iradtype=ONLINE_TRACKING_LINK&irgwc=1&irmptype=mediapartner&irpid=369282&mp_value1=&utm_campaign=af_impact_radius_369282&utm_medium=affiliate&utm_source=impact_radius -->
 
 
-    <nav class="sticky top-0 left-0 bg-transparent py-10 z-10">
+    <nav class="fixed top-0 left-0 w-full transition duration-500 bg-transparent py-4 z-10" id="navmenu">
         <div class="es-container">
             <div class="flex flex-col lg:flex-row items-auto lg:items-center justify-between gap-0 lg:gap-2">
-                <div class="w-50 flex justify-between">
+                <div class="w-50 flex justify-between items-center">
                     <h1 class="es-title text-3xl text-white">Fu<span style="color: var(--color-4)">s</span>ion</h1>
                 
-                    <div class="burger block lg:hidden" id="burger">
-                        <span class="burger-line"></span>
-                        <span class="burger-line"></span>
-                        <span class="burger-line"></span>
+                    <div class="es-burger block lg:hidden" id="burger">
+                        <span class="es-burger-line"></span>
+                        <span class="es-burger-line"></span>
+                        <span class="es-burger-line"></span>
                     </div>
                 </div>
-                <ul class="es-nav es-nav-block transition lg:opacity-100 flex flex-col lg:flex-row items-center gap-9 mt-8 lg:m-0 lg:bg-transparent" id="menu">
-                    <li><a class="text-base es-text-hover transition lg:hover:border-b" href="#home">Home</a></li>
-                    <li><a class="text-base es-text-hover transition lg:hover:border-b" href="#information">Apartment</a></li>
-                    <li><a class="text-base es-text-hover transition lg:hover:border-b" href="#gallery">Gallery</a></li>
-                    <li><a class="text-base es-text-hover transition lg:hover:border-b" href="#trust">Trust</a></li>
-                    <li><a class="text-base es-text-hover transition lg:hover:border-b" href="#news">Blog</a></li>
+                <!-- <ul class="es-nav es-nav-block transition lg:opacity-100 flex flex-col lg:flex-row items-center gap-9 mt-8 lg:m-0 lg:bg-transparent" id="menu">
+                    <li><a class="text-base es-text-hover transition hover:border-b lg:hover:border-none" href="#home">Home</a></li>
+                    <li><a class="text-base es-text-hover transition hover:border-b lg:hover:border-none" href="#information">Apartment</a></li>
+                    <li><a class="text-base es-text-hover transition hover:border-b lg:hover:border-none" href="#gallery">Gallery</a></li>
+                    <li><a class="text-base es-text-hover transition hover:border-b lg:hover:border-none" href="#trust">Trust</a></li>
+                    <li><a class="text-base es-text-hover transition hover:border-b lg:hover:border-none" href="#news">Blog</a></li>
                 </ul>
                 <div class="es-nav-contact es-nav-block transition lg:opacity-100 flex justify-center items-center sm:gap-6 lg:bg-transparent" id="menu-contact">
                     <a class="es-text-hover hidden md:block text-xl" href="#"><i class="fa-regular fa-calendar-check"></i></a>
                     <a class="es-text-hover hidden md:block text-xl" href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
                     <p class="es-text-hover text-xxl">(+66) 02 223 4456</p>
-                </div>
+                </div> -->
 
-                
+                <div class="es-nav es-nav-block lg:block lg:opacity-100 lg:bg-transparent" id="menu">
+                    <ul class="transition flex flex-col lg:flex-row items-center gap-9 mt-8 lg:m-0">
+                        <li><a class="text-base es-text-hover transition hover:border-b lg:hover:border-none" href="#home">Home</a></li>
+                        <li><a class="text-base es-text-hover transition hover:border-b lg:hover:border-none" href="#information">Apartment</a></li>
+                        <li><a class="text-base es-text-hover transition hover:border-b lg:hover:border-none" href="#gallery">Gallery</a></li>
+                        <li><a class="text-base es-text-hover transition hover:border-b lg:hover:border-none" href="#trust">Trust</a></li>
+                        <li><a class="text-base es-text-hover transition hover:border-b lg:hover:border-none" href="#news">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="es-nav-contact es-nav-block lg:block lg:opacity-100 lg:bg-transparent" id="menu-contact">
+                    <div class="transition flex justify-center items-center sm:gap-6">
+                        <a class="es-text-hover hidden md:block text-xl" href="#"><i class="fa-regular fa-calendar-check"></i></a>
+                        <a class="es-text-hover hidden md:block text-xl" href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                        <p class="es-text-hover text-xxl">(+66) 02 223 4456</p>
+                    </div>
+                </div>
             </div>
         </div>
-       
     </nav>
 
     <!-- Header -->
     <header class="header w-full relative overflow-hidden" id="home">
-        
-        <div class="w-full">
-            <div class="es-container flex justify-center">
-                <div class="sm:w-5/6 lg:w-4/6 mt-40 flex flex-col">
+        <div class="w-full h-full">
+            <div class="es-container h-full flex items-center justify-center">
+                <div class="sm:w-5/6 lg:w-4/6 flex flex-col">
                     <h1 class="es-title text-5xl text-white">Let's Take You To Your Dream House</h1>
                     <span class="text-sm text-slate-300 pt-6">2203 Mosita, Lorem ipsum dolor sit. VA 234405</span>
                     <div class="block">

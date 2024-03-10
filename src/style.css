@@ -10,6 +10,7 @@
     --color-3: #5b8fb9;
     --color-4: #85dcc2;
     --color-5: #47d0a7;
+    --bg-nav: #06003a;
 }
 
 /* ============== Custom Class general use ============== */
@@ -111,7 +112,7 @@ body {
 .es-nav-active {
     opacity: 1 !important;
     pointer-events: initial;
-    display: block !important;
+    display: inline-block !important;
 }
 
 .es-nav-block {
@@ -122,7 +123,7 @@ body {
 
 .es-nav {
     padding: 1.5rem 0;
-    background-color: var(--color-1);
+    background-color: var(--bg-nav);
 }
 
 .es-nav-contact {
@@ -130,12 +131,16 @@ body {
     background-color: var(--color-2);
 }
 
-.burger {
+.es-nav-bgchange {
+    background-color: var(--bg-nav) !important;
+}
+
+.es-burger {
     position: relative;
     display: block;
     cursor: pointer;
     -webkit-user-select: none;
-       -moz-user-select: none;
+        -moz-user-select: none;
         -ms-user-select: none;
             user-select: none;
     width: 1.5rem;
@@ -143,8 +148,9 @@ body {
     border: none;
     outline: none;
     visibility: visible;
-  }
-  .burger-line {
+}
+
+.es-burger-line {
     position: absolute;
     display: block;
     right: 0;
@@ -153,31 +159,37 @@ body {
     opacity: 1;
     rotate: 0deg;
     border-radius: 0.15rem;
-    background-color: var(--color-4);
+    background-color: var(--color-5);
     transition: all 0.3s ease;
-  }
-  .burger-line:nth-child(1) {
+}
+
+.es-burger-line:nth-child(1) {
     top: 0px;
-  }
-  .burger-line:nth-child(2) {
+}
+
+.es-burger-line:nth-child(2) {
     top: 0.5rem;
     width: 70%;
-  }
-  .burger-line:nth-child(3) {
+}
+
+.es-burger-line:nth-child(3) {
     top: 1rem;
-  }
-  .burger.is-active > .burger-line:nth-child(1) {
+}
+
+.es-burger.es-nav-active > .es-burger-line:nth-child(1) {
     top: 0.5rem;
     rotate: 135deg;
-  }
-  .burger.is-active > .burger-line:nth-child(2) {
+}
+
+.es-burger.es-nav-active > .es-burger-line:nth-child(2) {
     opacity: 0;
-  }
-  .burger.is-active > .burger-line:nth-child(3) {
+}
+
+.es-burger.es-nav-active > .es-burger-line:nth-child(3) {
     top: 0.5rem;
     rotate: -135deg;
-  }
-
+}
+  
 
 /* -------- Scroll Animation -------- */
 .es-scroll-reveal {

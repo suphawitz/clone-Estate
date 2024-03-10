@@ -89,3 +89,17 @@ burgerMenu.addEventListener("click", () => {
   navbarMenuCon.classList.toggle("es-nav-active");
   burgerMenu.classList.toggle("es-nav-active");
 });
+
+// Nav menu if scroll is change background
+window.addEventListener('scroll', () => {
+  const verticalScrollPx = window.scrollY || window.pageYOffset;
+  const navMenu = document.getElementById("navmenu");
+
+  // console.log(verticalScrollPx > 500);
+  if (verticalScrollPx > 50) {
+    navMenu.classList.add("es-nav-bgchange");
+    // document.body.style.backgroundColor = 'red';
+  } else {
+    navMenu.classList.remove("es-nav-bgchange");
+  }
+});
